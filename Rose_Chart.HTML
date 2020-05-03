@@ -1,0 +1,123 @@
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script language="javascript" type="text/javascript" src="p5.min.js"></script>
+      <script language="javascript" type="text/javascript" src="Rose_Chart.js"></script>
+  </head>
+
+  <style>
+    
+    #container 
+    {
+      width: 97%;
+      padding-left: 18%;
+      font-family: sans-serif;
+    }
+    h1
+    {
+      font-family: sans-serif;
+      padding-top: 45px;
+      padding-left: 350px;
+    }
+    .clearfix 
+    {
+      overflow: auto;
+    }
+    .clearfix::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .rectangle 
+    {
+      border: 1.5px solid black;
+      width: 59%;
+      text-align: center;
+      
+    }
+
+    .circle 
+    {
+      height: 14px;
+      width: 14px;
+      border-radius: 47%;
+      display: inline-block;
+    }
+
+    #Yellowcircle 
+    {
+      background-color: #ffe100;
+    }
+    #Redcircle 
+    {
+      background-color: #ff0046;
+    }
+    #Blackcircle 
+    {
+    background-color: #323232;
+    }
+
+    table 
+    {
+      width: 99%;
+    }
+
+    .align 
+    {
+      width: 99%;
+    }
+
+    th 
+    {
+      width: 29%;
+      font-weight: normal;
+      vertical-align: top;
+    }
+    #chart
+    {
+      float: left;
+      padding-top: 49px;
+    }
+    .text
+    {
+      color:'black';
+      margin-left:700px;
+      padding-top: 50px;
+      font-size: 24px;
+    }
+  </style>
+
+  <body>
+      <div id="container" class="clearfix">
+          <h1>  Causes of Mortality in the Army of the East </h1>
+          <div class="rectangle clearfix">
+            <table class="clearfix">
+              <tr>
+                <th>
+                  <div class="circle" id="Yellowcircle"></div>
+                  <span class="align"><b>Deaths by Zymotic Diseases</b></span>
+                </th>
+            
+                <th>
+                  <div class="circle" id="Redcircle"></div>
+                  <span class="align"><b>Deaths by Wounds</b></span>
+                </th>
+            
+                <th>
+                  <div class="circle" id="Blackcircle"></div>
+                  <span class="align"><b>Deaths by Other Causes</b></span>
+                </th>
+            
+              </tr>
+            </table>
+          </div>
+      </div>
+      <div id="chart">
+        <span class="text"><b> From April-1854 to March-1855</b></span><span class="text" ><b>From April-1855 to March-1856</b></span>
+      </div >
+  </body>
+</html>
